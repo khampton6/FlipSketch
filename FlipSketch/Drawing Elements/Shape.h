@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Transformation.h"
+#import "ShapePoint.h"
 
 @interface Shape : NSObject
+
+@property int xPos;
+@property int yPos;
+@property (strong) Transformation* tForm;
+@property (strong) ShapePoint* sPoint;
 
 @end

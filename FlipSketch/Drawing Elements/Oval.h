@@ -1,5 +1,5 @@
 //
-//  Rectangle.h
+//  Oval.h
 //  FlipSketch
 //
 //  Created by Brandon Headrick on 10/6/12.
@@ -8,8 +8,6 @@
 
 #import "Shape.h"
 
-@interface Rectangle : Shape
-
-
+@interface Oval : Shape
 
 @end
