@@ -10,4 +10,10 @@
 
 @implementation Rectangle
 
+- (id)initWithX:(int)x withY:(int)y {
+    self = [super initWithX: x withY: y];
+    
+    return self;
+}
+
 @end

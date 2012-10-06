@@ -17,4 +17,6 @@
 @property (strong) Transformation* tForm;
 @property (strong) ShapePoint* sPoint;
 
+- (id)initWithX: (int)x withY: (int)y;
+
 @end
