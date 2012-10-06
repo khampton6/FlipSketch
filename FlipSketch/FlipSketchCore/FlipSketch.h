@@ -10,4 +10,8 @@
 
 @interface FlipSketch : NSObject
 
+@property (nonatomic, retain) NSString* description;
+@property (nonatomic, retain) NSString* name;
+@property int numPages;
+
 @end

@@ -10,4 +10,7 @@
 
 @implementation FlipSketch
 
+@synthesize name, description, numPages;
+
+
 @end

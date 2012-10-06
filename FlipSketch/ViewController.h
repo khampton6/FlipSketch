@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import "PreviewTextView.h"
+#import "SketchListView.h"
+
+@interface ViewController : UIViewController {
+  IBOutlet SketchListView* sketchList;
+  IBOutlet PreviewTextView* previewTextView;
+}
+
+@property (nonatomic, retain) NSArray* flipSketches;
 
 @end
-
-//woohoo

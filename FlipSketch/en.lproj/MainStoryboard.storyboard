@@ -26,7 +26,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="iFx-ra-99q" firstAttribute="top" secondItem="eBY-XV-bXn" secondAttribute="top" constant="4" id="3fS-Z6-7Fb"/>
+                                    <constraint firstItem="iFx-ra-99q" firstAttribute="top" secondItem="eBY-XV-bXn" secondAttribute="top" constant="5" id="Pkb-RC-ivN"/>
                                     <constraint firstItem="iFx-ra-99q" firstAttribute="centerX" secondItem="eBY-XV-bXn" secondAttribute="centerX" type="default" id="hOB-zP-lVh"/>
                                 </constraints>
                             </view>
@@ -74,19 +74,19 @@
                             <constraint firstItem="e39-mb-Y3n" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="344" id="6GD-tQ-NGV"/>
                             <constraint firstAttribute="bottom" secondItem="e39-mb-Y3n" secondAttribute="bottom" constant="197" id="7FZ-97-EKO"/>
                             <constraint firstAttribute="trailing" secondItem="gzb-cn-CtN" secondAttribute="trailing" constant="706" id="7kh-LY-ZQz"/>
+                            <constraint firstItem="IK5-rV-G5U" firstAttribute="top" secondItem="5" secondAttribute="top" constant="620" id="Abu-Dd-meW"/>
                             <constraint firstItem="IK5-rV-G5U" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" type="default" id="LQu-H5-gyo"/>
                             <constraint firstItem="IK5-rV-G5U" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="OsL-cC-4Tt"/>
-                            <constraint firstItem="gzb-cn-CtN" firstAttribute="top" secondItem="5" secondAttribute="top" constant="39" id="Ud1-t2-Ovx"/>
                             <constraint firstItem="e39-mb-Y3n" firstAttribute="top" secondItem="5" secondAttribute="top" constant="106" id="Vsv-QC-ld9"/>
-                            <constraint firstAttribute="bottom" secondItem="gzb-cn-CtN" secondAttribute="bottom" constant="129" id="Wgn-CI-pgM"/>
                             <constraint firstAttribute="trailing" secondItem="e39-mb-Y3n" secondAttribute="trailing" constant="26" id="ZSb-Bk-w40"/>
+                            <constraint firstAttribute="bottom" secondItem="gzb-cn-CtN" secondAttribute="bottom" constant="128" id="ZtB-a0-TlH"/>
+                            <constraint firstAttribute="bottom" secondItem="eBY-XV-bXn" secondAttribute="bottom" constant="708" id="aue-t1-YmA"/>
                             <constraint firstItem="eBY-XV-bXn" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="bgD-ap-Lfj"/>
                             <constraint firstItem="eBY-XV-bXn" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="ikm-wa-Be2"/>
+                            <constraint firstAttribute="bottom" secondItem="IK5-rV-G5U" secondAttribute="bottom" constant="-2" id="klv-Rt-fh2"/>
                             <constraint firstItem="gzb-cn-CtN" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="lr8-fS-uqJ"/>
-                            <constraint firstItem="IK5-rV-G5U" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" type="default" id="myK-3l-Yt0"/>
                             <constraint firstItem="eBY-XV-bXn" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" type="default" id="nUW-GU-KAy"/>
-                            <constraint firstItem="IK5-rV-G5U" firstAttribute="top" secondItem="5" secondAttribute="top" constant="620" id="osP-eA-tkm"/>
-                            <constraint firstAttribute="bottom" secondItem="eBY-XV-bXn" secondAttribute="bottom" constant="709" id="vC3-Fq-zBH"/>
+                            <constraint firstItem="gzb-cn-CtN" firstAttribute="top" secondItem="5" secondAttribute="top" constant="40" id="zql-lF-ile"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -100,8 +100,18 @@
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
+        <class className="PreviewTextView" superclassName="UITextView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PreviewTextView.h"/>
+        </class>
+        <class className="SketchListView" superclassName="UIScrollView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SketchListView.h"/>
+        </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="previewTextView" candidateClass="PreviewTextView"/>
+                <relationship kind="outlet" name="sketchList" candidateClass="SketchListView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
