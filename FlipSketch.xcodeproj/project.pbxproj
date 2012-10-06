@@ -19,6 +19,7 @@
 		AA68050C161B95AB005C0D86 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA68050B161B95AB005C0D86 /* Default-568h@2x.png */; };
 		AA68050F161B95AB005C0D86 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA68050D161B95AB005C0D86 /* MainStoryboard.storyboard */; };
 		AA680512161B95AB005C0D86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA680511161B95AB005C0D86 /* ViewController.m */; };
+		AA690A321620B202007F7291 /* PreviewTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA690A311620B202007F7291 /* PreviewTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		AA68050E161B95AB005C0D86 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		AA680510161B95AB005C0D86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AA680511161B95AB005C0D86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA690A301620B202007F7291 /* PreviewTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreviewTextView.h; path = StartScreen/PreviewTextView.h; sourceTree = "<group>"; };
+		AA690A311620B202007F7291 /* PreviewTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreviewTextView.m; path = StartScreen/PreviewTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 			children = (
 				AA680510161B95AB005C0D86 /* ViewController.h */,
 				AA680511161B95AB005C0D86 /* ViewController.m */,
+				AA690A301620B202007F7291 /* PreviewTextView.h */,
+				AA690A311620B202007F7291 /* PreviewTextView.m */,
 			);
 			name = StartScreen;
 			sourceTree = "<group>";
@@ -205,7 +210,11 @@
 				AA680502161B95AB005C0D86 /* main.m in Sources */,
 				AA680506161B95AB005C0D86 /* AppDelegate.m in Sources */,
 				AA680512161B95AB005C0D86 /* ViewController.m in Sources */,
+<<<<<<< HEAD
 				14A7A3641620B18600C86ED6 /* Shape.m in Sources */,
+=======
+				AA690A321620B202007F7291 /* PreviewTextView.m in Sources */,
+>>>>>>> Added StartScreen element: PreviewTextView
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
