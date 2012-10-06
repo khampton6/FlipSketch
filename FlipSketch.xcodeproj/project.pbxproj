@@ -83,11 +83,12 @@
 		AA6804FB161B95AB005C0D86 /* FlipSketch */ = {
 			isa = PBXGroup;
 			children = (
+				AA690A2B1620AF93007F7291 /* Drawing Elements */,
+				AA690A2A1620AF5B007F7291 /* Sketch */,
+				AA690A271620AF30007F7291 /* StartScreen */,
 				AA680504161B95AB005C0D86 /* AppDelegate.h */,
 				AA680505161B95AB005C0D86 /* AppDelegate.m */,
 				AA68050D161B95AB005C0D86 /* MainStoryboard.storyboard */,
-				AA680510161B95AB005C0D86 /* ViewController.h */,
-				AA680511161B95AB005C0D86 /* ViewController.m */,
 				AA6804FC161B95AB005C0D86 /* Supporting Files */,
 			);
 			path = FlipSketch;
@@ -105,6 +106,29 @@
 				AA68050B161B95AB005C0D86 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA690A271620AF30007F7291 /* StartScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AA680510161B95AB005C0D86 /* ViewController.h */,
+				AA680511161B95AB005C0D86 /* ViewController.m */,
+			);
+			name = StartScreen;
+			sourceTree = "<group>";
+		};
+		AA690A2A1620AF5B007F7291 /* Sketch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sketch;
+			sourceTree = "<group>";
+		};
+		AA690A2B1620AF93007F7291 /* Drawing Elements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Drawing Elements";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
