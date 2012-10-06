@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14A7A3641620B18600C86ED6 /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A7A3631620B18600C86ED6 /* Shape.m */; };
 		AA6804F6161B95AB005C0D86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6804F5161B95AB005C0D86 /* UIKit.framework */; };
 		AA6804F8161B95AB005C0D86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6804F7161B95AB005C0D86 /* Foundation.framework */; };
 		AA6804FA161B95AB005C0D86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6804F9161B95AB005C0D86 /* CoreGraphics.framework */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14A7A3621620B18600C86ED6 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shape.h; path = "Drawing Elements/Shape.h"; sourceTree = "<group>"; };
+		14A7A3631620B18600C86ED6 /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shape.m; path = "Drawing Elements/Shape.m"; sourceTree = "<group>"; };
 		AA6804F1161B95AB005C0D86 /* FlipSketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipSketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6804F5161B95AB005C0D86 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AA6804F7161B95AB005C0D86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -127,6 +130,8 @@
 		AA690A2B1620AF93007F7291 /* Drawing Elements */ = {
 			isa = PBXGroup;
 			children = (
+				14A7A3621620B18600C86ED6 /* Shape.h */,
+				14A7A3631620B18600C86ED6 /* Shape.m */,
 			);
 			name = "Drawing Elements";
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 				AA680502161B95AB005C0D86 /* main.m in Sources */,
 				AA680506161B95AB005C0D86 /* AppDelegate.m in Sources */,
 				AA680512161B95AB005C0D86 /* ViewController.m in Sources */,
+				14A7A3641620B18600C86ED6 /* Shape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
