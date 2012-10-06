@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 
-#import "FlipSketch.h"
-
 @interface ViewController ()
 
 @end
@@ -20,7 +18,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
   
   FlipSketch* sketch = [[FlipSketch alloc] init];
   [sketch setName:@"New Page"];
@@ -28,6 +26,13 @@
   [sketch setNumPages:0];
   
   flipSketches = [[NSMutableArray alloc] initWithObjects:sketch, nil ];
+  [self setSketch:sketch];
+}
+
+-(void) setSketch:(FlipSketch*) sketch {
+  
+  
+  [previewTextView setText: [sketch description]];
 }
 
 - (void)didReceiveMemoryWarning

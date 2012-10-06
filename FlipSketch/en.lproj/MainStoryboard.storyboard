@@ -30,7 +30,7 @@
                                     <constraint firstItem="iFx-ra-99q" firstAttribute="centerX" secondItem="eBY-XV-bXn" secondAttribute="centerX" type="default" id="hOB-zP-lVh"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IK5-rV-G5U">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IK5-rV-G5U" customClass="SketchListView">
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzb-cn-CtN">
@@ -48,8 +48,8 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hn-a3-QTL">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="515" id="N9Q-uZ-P9S"/>
                                             <constraint firstAttribute="width" constant="312" id="SYJ-4O-yjW"/>
+                                            <constraint firstAttribute="height" constant="252" id="VCe-oz-lv3"/>
                                         </constraints>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -59,10 +59,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="4hn-a3-QTL" firstAttribute="top" secondItem="gzb-cn-CtN" secondAttribute="top" type="default" id="JO8-dT-gh1"/>
+                                    <constraint firstItem="4hn-a3-QTL" firstAttribute="leading" secondItem="gzb-cn-CtN" secondAttribute="leading" constant="3" id="0vA-v9-dhU"/>
+                                    <constraint firstItem="4hn-a3-QTL" firstAttribute="top" secondItem="gzb-cn-CtN" secondAttribute="top" constant="224" id="Ehu-Id-bUP"/>
                                     <constraint firstAttribute="bottom" secondItem="3l4-70-vDP" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Psn-gC-aFQ"/>
-                                    <constraint firstItem="3l4-70-vDP" firstAttribute="centerX" secondItem="gzb-cn-CtN" secondAttribute="centerX" type="default" id="Scz-LH-Ijr"/>
-                                    <constraint firstItem="4hn-a3-QTL" firstAttribute="leading" secondItem="gzb-cn-CtN" secondAttribute="leading" type="default" id="TlC-XN-Y2e"/>
+                                    <constraint firstItem="4hn-a3-QTL" firstAttribute="centerX" secondItem="3l4-70-vDP" secondAttribute="centerX" type="default" id="TGE-tZ-lCS"/>
+                                    <constraint firstItem="4hn-a3-QTL" firstAttribute="centerX" secondItem="gzb-cn-CtN" secondAttribute="centerX" type="default" id="lnE-Da-dZg"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e39-mb-Y3n">
@@ -73,7 +74,6 @@
                         <constraints>
                             <constraint firstItem="e39-mb-Y3n" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="344" id="6GD-tQ-NGV"/>
                             <constraint firstAttribute="bottom" secondItem="e39-mb-Y3n" secondAttribute="bottom" constant="197" id="7FZ-97-EKO"/>
-                            <constraint firstAttribute="trailing" secondItem="gzb-cn-CtN" secondAttribute="trailing" constant="706" id="7kh-LY-ZQz"/>
                             <constraint firstItem="IK5-rV-G5U" firstAttribute="top" secondItem="5" secondAttribute="top" constant="620" id="Abu-Dd-meW"/>
                             <constraint firstItem="IK5-rV-G5U" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" type="default" id="LQu-H5-gyo"/>
                             <constraint firstItem="IK5-rV-G5U" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="OsL-cC-4Tt"/>
@@ -91,6 +91,10 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="previewTextView" destination="4hn-a3-QTL" id="W6j-5a-alB"/>
+                        <outlet property="sketchList" destination="IK5-rV-G5U" id="UD5-WL-wsW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,16 +104,13 @@
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
-        <class className="PreviewTextView" superclassName="UITextView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PreviewTextView.h"/>
-        </class>
         <class className="SketchListView" superclassName="UIScrollView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SketchListView.h"/>
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="previewTextView" candidateClass="PreviewTextView"/>
+                <relationship kind="outlet" name="previewTextView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="sketchList" candidateClass="SketchListView"/>
             </relationships>
         </class>
