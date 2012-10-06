@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SketchListView : UIScrollView
+@interface SketchListView : UIScrollView {
+  NSArray* sketches;
+}
+
+-(void) setSketches:(NSArray *)slist;
 
 @end

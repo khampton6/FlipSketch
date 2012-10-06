@@ -14,6 +14,8 @@
 @interface ViewController : UIViewController {
   IBOutlet SketchListView* sketchList;
   IBOutlet UITextView* previewTextView;
+  IBOutlet UILabel* nameLabel;
+  IBOutlet UILabel* pagesLabel;
 }
 
 @property (nonatomic, retain) NSArray* flipSketches;

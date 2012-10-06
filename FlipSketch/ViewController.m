@@ -21,16 +21,21 @@
   [super viewDidLoad];
   
   FlipSketch* sketch = [[FlipSketch alloc] init];
-  [sketch setName:@"New Page"];
+  [sketch setName:@"New Sketch"];
   [sketch setDescription:@"Press the Start Sketching button below to start sketching!"];
   [sketch setNumPages:0];
   
   flipSketches = [[NSMutableArray alloc] initWithObjects:sketch, nil ];
   [self setSketch:sketch];
+  [sketchList setSketches: flipSketches];
 }
 
 -(void) setSketch:(FlipSketch*) sketch {
   
+  [nameLabel setText:[sketch name]];
+  
+  NSString* pagesStr = [NSString stringWithFormat:@"%d", [sketch numPages]];
+  [pagesLabel setText: pagesStr];
   
   [previewTextView setText: [sketch description]];
 }

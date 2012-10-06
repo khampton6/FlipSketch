@@ -10,6 +10,12 @@
 
 @implementation SketchListView
 
+const int SKETCHNODEWIDTH = 200;
+const int SKETCHNODEHEIGHT = 100;
+
+const int SKETCHNODESPACINGY = 40;
+const int SKETCHNODESPACINGX = 40;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -19,13 +25,35 @@
     return self;
 }
 
+-(void) setSketches:(NSArray *)slist {
+  sketches = slist;
+  
+  //Need to resize view
+  int selfWidth = SKETCHNODEWIDTH * [sketches count] + SKETCHNODESPACINGX;
+  int selfHeight = SKETCHNODEHEIGHT + SKETCHNODESPACINGY;
+  [self setContentSize:CGSizeMake(selfWidth, selfHeight)];
+  
+  //Add represent tiles
+  int startX = 10;
+  int startY = 10;
+  for(int i = 0; i < [sketches count]; i++) {
+    UIImageView* img = [[UIImageView alloc] initWithFrame:CGRectMake((i+1)*startX,startY, 240,100)];
+    [img setBackgroundColor:[UIColor whiteColor]];
+    
+    [self addSubview: img];
+  }
+  
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
-    // Drawing code
-}
-*/
+  for(int i = 0; i < [sketches count]; i++) {
+    
+  }
+}*/
+
 
 @end
