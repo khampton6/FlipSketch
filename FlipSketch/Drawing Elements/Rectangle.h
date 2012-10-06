@@ -1,18 +1,13 @@
 //
-//  Shape.m
+//  Rectangle.h
 //  FlipSketch
 //
 //  Created by Brandon Headrick on 10/6/12.
 //  Copyright (c) 2012 Kevin Hampton. All rights reserved.
 //
 
-#import "Shape.h"
+#import <Foundation/Foundation.h>
 
-@implementation Shape
-
-
-//@property (strong) ScaryBugData *data;
-
-
+@interface Rectangle : NSObject
 
 @end
