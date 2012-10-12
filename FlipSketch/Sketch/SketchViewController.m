@@ -26,7 +26,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+  
+  UIPanGestureRecognizer* dragGest = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleDrag:)];
+  [self.view addGestureRecognizer: dragGest];
+  
 	// Do any additional setup after loading the view.
+}
+
+-(void) handleDrag:(UIGestureRecognizer*) recognizer {
+  
+  [recognizer locationInView:self.view];
 }
 
 - (void)didReceiveMemoryWarning
