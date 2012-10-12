@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SketchListView.h"
 
 @interface ViewController ()
 
@@ -19,19 +20,12 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  
-  FlipSketch* sketch = [[FlipSketch alloc] init];
-  [sketch setName:@"New Sketch"];
-  [sketch setDescription:@"Press the Start Sketching button below to start sketching!"];
-  [sketch setNumPages:0];
-  
-  flipSketches = [[NSMutableArray alloc] initWithObjects:sketch, nil ];
-  [self setSketch:sketch];
-  [sketchList setSketches: flipSketches];
+  flipSketches = [[NSMutableArray alloc] init];
+  [sketchList loadSketches:flipSketches];
 }
 
 -(void) setSketch:(FlipSketch*) sketch {
-  
+    
   [nameLabel setText:[sketch name]];
   
   NSString* pagesStr = [NSString stringWithFormat:@"%d", [sketch numPages]];

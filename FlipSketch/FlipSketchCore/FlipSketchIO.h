@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface FlipSketchIO : NSObject
-+ (UIImage*) readNewImage;
++ (UIImage*) readNewSketchImage;
 + (NSArray*) readFlipSketches;
 @end

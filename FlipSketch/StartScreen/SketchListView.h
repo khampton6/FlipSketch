@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "ViewController.h"
+
+@class ViewController;
 
 @interface SketchListView : UIScrollView {
-  NSArray* sketches;
+  NSMutableArray* sketchPreviews;
+  int selected;
+  IBOutlet ViewController* parentController;
 }
 
--(void) setSketches:(NSArray *)slist;
+-(void) loadSketches:(NSArray *)slist;
 
 @end

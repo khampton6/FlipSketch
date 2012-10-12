@@ -10,8 +10,12 @@
 
 @implementation FlipSketchIO
 
-+(UIImage*) readNewImage {
++(UIImage*) readNewSketchImage {
   return [UIImage imageNamed:@"plus.png"];
+}
+
++(NSArray*) readFlipSketches {
+  return [[NSArray alloc] init];
 }
 
 @end

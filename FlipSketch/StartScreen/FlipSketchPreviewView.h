@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlipSketch.h"
 
-@interface FlipSketchPreviewView : UIView
+@interface FlipSketchPreviewView : UIView {
+  UIImage* imageStub;
+  BOOL selected;
+}
+
+@property(nonatomic, retain) FlipSketch* sketch;
+
++ (id) createNewPreviewView: (CGRect) frame;
+- (void) setPreviewStub: (UIImage*) image withFrame:(CGRect) rect;
+- (void) setSelected:(BOOL) isSelected;
 
 @end
