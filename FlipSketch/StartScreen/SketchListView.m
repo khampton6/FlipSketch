@@ -7,6 +7,7 @@
 //
 
 #import "SketchListView.h"
+#import "FlipSketchIO.h"
 
 @implementation SketchListView
 
@@ -36,6 +37,13 @@ const int SKETCHNODESPACINGX = 40;
   //Add represent tiles
   int startX = 10;
   int startY = 10;
+
+  UIImageView* newSketch = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 240, 100)];
+  UIImage* newImage = [FlipSketchIO readNewImage];
+  [newSketch setImage:newImage];
+  [self addSubview:newSketch];
+  return;
+  
   for(int i = 0; i < [sketches count]; i++) {
     UIImageView* img = [[UIImageView alloc] initWithFrame:CGRectMake((i+1)*startX,startY, 240,100)];
     [img setBackgroundColor:[UIColor whiteColor]];
