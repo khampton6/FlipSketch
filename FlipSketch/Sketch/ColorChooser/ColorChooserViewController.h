@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ColorChooserViewController : UIViewController
+@interface ColorChooserViewController : UIViewController {
+  IBOutlet UISlider* rSlider;
+  IBOutlet UISlider* gSlider;
+  IBOutlet UISlider* bSlider;
+  
+  IBOutlet UILabel* rLabel;
+  IBOutlet UILabel* gLabel;
+  IBOutlet UILabel* bLabel;
+  
+  double r, g, b;
+}
 
 @end
