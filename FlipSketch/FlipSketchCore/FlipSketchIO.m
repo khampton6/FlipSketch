@@ -11,7 +11,7 @@
 @implementation FlipSketchIO
 
 +(UIImage*) readNewImage {
-  return [UIImage imageNamed:@"add.png"];
+  return [UIImage imageNamed:@"plus.png"];
 }
 
 @end

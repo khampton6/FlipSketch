@@ -38,8 +38,8 @@ const int SKETCHNODESPACINGX = 40;
   int startX = 10;
   int startY = 10;
 
-  UIImageView* newSketch = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 240, 100)];
   UIImage* newImage = [FlipSketchIO readNewImage];
+  UIImageView* newSketch = [[UIImageView alloc] initWithImage:newImage];
   [newSketch setImage:newImage];
   [self addSubview:newSketch];
   return;
