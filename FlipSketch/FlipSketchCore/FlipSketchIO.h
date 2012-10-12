@@ -11,5 +11,6 @@
 @interface FlipSketchIO : NSObject
 
 + (UIImage*) readNewImage;
++ (NSArray*) readFlipSketches;
 
 @end

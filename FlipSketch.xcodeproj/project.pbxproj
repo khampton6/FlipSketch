@@ -14,8 +14,8 @@
 		144A67D51620C24E003E694E /* ShapePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 144A67D41620C24E003E694E /* ShapePoint.m */; };
 		147A9D491620B5B000CB02BE /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 147A9D481620B5B000CB02BE /* Rectangle.m */; };
 		14A7A3641620B18600C86ED6 /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A7A3631620B18600C86ED6 /* Shape.m */; };
-		AA459FE21628701D00ADC992 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = AA459FE11628701D00ADC992 /* add.png */; };
 		AA459FE51628703B00ADC992 /* FlipSketchIO.m in Sources */ = {isa = PBXBuildFile; fileRef = AA459FE41628703B00ADC992 /* FlipSketchIO.m */; };
+		AA459FE71628737A00ADC992 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = AA459FE61628737A00ADC992 /* add.png */; };
 		AA6804F6161B95AB005C0D86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6804F5161B95AB005C0D86 /* UIKit.framework */; };
 		AA6804F8161B95AB005C0D86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6804F7161B95AB005C0D86 /* Foundation.framework */; };
 		AA6804FA161B95AB005C0D86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6804F9161B95AB005C0D86 /* CoreGraphics.framework */; };
@@ -46,9 +46,9 @@
 		147A9D481620B5B000CB02BE /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rectangle.m; path = "Drawing Elements/Rectangle.m"; sourceTree = "<group>"; };
 		14A7A3621620B18600C86ED6 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shape.h; path = "Drawing Elements/Shape.h"; sourceTree = "<group>"; };
 		14A7A3631620B18600C86ED6 /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shape.m; path = "Drawing Elements/Shape.m"; sourceTree = "<group>"; };
-		AA459FE11628701D00ADC992 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add.png; path = ../../../Desktop/add.png; sourceTree = "<group>"; };
 		AA459FE31628703B00ADC992 /* FlipSketchIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlipSketchIO.h; path = FlipSketchCore/FlipSketchIO.h; sourceTree = "<group>"; };
 		AA459FE41628703B00ADC992 /* FlipSketchIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipSketchIO.m; path = FlipSketchCore/FlipSketchIO.m; sourceTree = "<group>"; };
+		AA459FE61628737A00ADC992 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		AA6804F1161B95AB005C0D86 /* FlipSketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipSketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6804F5161B95AB005C0D86 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AA6804F7161B95AB005C0D86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,7 +97,7 @@
 		AA459FE01628700B00ADC992 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AA459FE11628701D00ADC992 /* add.png */,
+				AA459FE61628737A00ADC992 /* add.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -264,7 +264,7 @@
 				AA68050A161B95AB005C0D86 /* Default@2x.png in Resources */,
 				AA68050C161B95AB005C0D86 /* Default-568h@2x.png in Resources */,
 				AA68050F161B95AB005C0D86 /* MainStoryboard.storyboard in Resources */,
-				AA459FE21628701D00ADC992 /* add.png in Resources */,
+				AA459FE71628737A00ADC992 /* add.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
