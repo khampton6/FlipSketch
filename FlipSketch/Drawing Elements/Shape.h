@@ -10,12 +10,15 @@
 #import "Transformation.h"
 #import "ShapePoint.h"
 
-@interface Shape : NSObject
+@interface Shape : NSObject {
+    int xPos;
+    int yPos;
+}
 
-@property int xPos;
-@property int yPos;
 @property (strong) Transformation* tForm;
 @property (strong) ShapePoint* sPoint;
+@property (nonatomic, retain) UIColor* color;
+@property BOOL filled;
 
 - (id)initWithX: (int)x withY: (int)y;
 

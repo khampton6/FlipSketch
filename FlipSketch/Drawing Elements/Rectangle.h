@@ -7,8 +7,14 @@
 //
 
 #import "Shape.h"
+#import "Drawing.h"
 
-@interface Rectangle : Shape
+@interface Rectangle : Shape <Drawing> {
+    
+}
+
+@property int width;
+@property int height;
 
 
 

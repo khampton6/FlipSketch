@@ -10,12 +10,11 @@
 
 @implementation Shape
 
-
 - (id)init{
     self = [super init];
     if(self){
-        _xPos = 0;
-        _yPos = 0;
+        xPos = 0;
+        yPos = 0;
         _tForm = NULL;
         _sPoint = NULL;
         
@@ -24,8 +23,8 @@
 }
 
 - (id)initWithX: (int)x withY: (int)y {
-    _xPos = x;
-    _yPos = y;
+    xPos = x;
+    yPos = y;
     _tForm = NULL;
     _sPoint = NULL;
     
