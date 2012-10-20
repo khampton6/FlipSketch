@@ -10,27 +10,37 @@
 
 @implementation Shape
 
-- (id)init{
-    self = [super init];
-    if(self){
-        xPos = 0;
-        yPos = 0;
-        _tForm = NULL;
-        _sPoint = NULL;
-        
-    }
-    return self;
+@synthesize x, y, strokeWidth, color, isFilled;
+
+- (id) initWithX: (int)xPos withY: (int)yPos withColor: (UIColor*) shapeColor  isFilled: (BOOL) filled {
+  
+  self = [super init];
+  
+  if(self) {
+    self.x = x;
+    self.y = y;
+    self.color = shapeColor;
+    self.isFilled = filled;
+  }
+  return self;
 }
 
-- (id)initWithX: (int)x withY: (int)y {
-    xPos = x;
-    yPos = y;
-    _tForm = NULL;
-    _sPoint = NULL;
-    
-    return self;
+- (id) initWithX: (int)xPos withY: (int)yPos withColor: (UIColor*) shapeColor {
+  self = [self initWithX:xPos withY:yPos withColor:shapeColor isFilled:YES];
+  
+  return self;
 }
 
+- (void) updatePositionWithX: (int) xPos withYPos: (int) yPos withWidth: (int) shapeWidth withHeight: (int) shapeHeight {
+  
+}
 
+-(void) draw:(CGContextRef)context {
+  
+}
+
+- (void) createShapePoints {
+  
+}
 
 @end

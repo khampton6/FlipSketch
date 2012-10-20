@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Shape;
 
 @interface ShapePoint : NSObject
+
+@property int x;
+@property int y;
+
+@property (retain) Shape* owner;
+
+-(id) initWithX: (int) xPos withY: (int) yPos withOwner:(Shape*) shapeOwner;
+-(void) draw:(CGContextRef) context;
 
 @end

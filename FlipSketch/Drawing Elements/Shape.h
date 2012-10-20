@@ -11,15 +11,21 @@
 #import "ShapePoint.h"
 
 @interface Shape : NSObject {
-    int xPos;
-    int yPos;
+
+  NSMutableArray* transformations;
+  NSMutableArray* shapePoints;
 }
 
-@property (strong) Transformation* tForm;
-@property (strong) ShapePoint* sPoint;
+@property int x;
+@property int y;
+@property int strokeWidth;
 @property (nonatomic, retain) UIColor* color;
-@property BOOL filled;
+@property BOOL isFilled;
 
-- (id)initWithX: (int)x withY: (int)y;
+- (id) initWithX: (int)xPos withY: (int)yPos withColor: (UIColor*) shapeColor isFilled: (BOOL) filled;
+- (id) initWithX: (int)xPos withY: (int)yPos withColor: (UIColor*) shapeColor;
+
+- (void)draw:(CGContextRef)context;
+- (void) updatePositionWithX: (int) xPos withYPos: (int) yPos withWidth: (int) shapeWidth withHeight: (int) shapeHeight;
 
 @end

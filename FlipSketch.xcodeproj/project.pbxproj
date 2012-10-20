@@ -58,7 +58,6 @@
 		147A9D481620B5B000CB02BE /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rectangle.m; path = "Drawing Elements/Rectangle.m"; sourceTree = "<group>"; };
 		14A7A3621620B18600C86ED6 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shape.h; path = "Drawing Elements/Shape.h"; sourceTree = "<group>"; };
 		14A7A3631620B18600C86ED6 /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shape.m; path = "Drawing Elements/Shape.m"; sourceTree = "<group>"; };
-		14FCAB5F1628CD25008BA661 /* Drawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drawing.h; sourceTree = "<group>"; };
 		AA459FE31628703B00ADC992 /* FlipSketchIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlipSketchIO.h; path = FlipSketchCore/FlipSketchIO.h; sourceTree = "<group>"; };
 		AA459FE41628703B00ADC992 /* FlipSketchIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipSketchIO.m; path = FlipSketchCore/FlipSketchIO.m; sourceTree = "<group>"; };
 		AA459FEA162874F600ADC992 /* FlipSketchPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlipSketchPreviewView.h; path = StartScreen/FlipSketchPreviewView.h; sourceTree = "<group>"; };
@@ -262,17 +261,16 @@
 				14A7A3631620B18600C86ED6 /* Shape.m */,
 				147A9D471620B5B000CB02BE /* Rectangle.h */,
 				147A9D481620B5B000CB02BE /* Rectangle.m */,
-				144A67C61620C08A003E694E /* Transformation.h */,
-				144A67C71620C08A003E694E /* Transformation.m */,
 				144A67CA1620C167003E694E /* Oval.h */,
 				144A67CB1620C167003E694E /* Oval.m */,
 				144A67CD1620C20C003E694E /* Line.h */,
 				144A67CE1620C20C003E694E /* Line.m */,
 				144A67D01620C21D003E694E /* Brush.h */,
 				144A67D11620C21D003E694E /* Brush.m */,
+				144A67C61620C08A003E694E /* Transformation.h */,
+				144A67C71620C08A003E694E /* Transformation.m */,
 				144A67D31620C24E003E694E /* ShapePoint.h */,
 				144A67D41620C24E003E694E /* ShapePoint.m */,
-				14FCAB5F1628CD25008BA661 /* Drawing.h */,
 			);
 			name = "Drawing Elements";
 			sourceTree = "<group>";
