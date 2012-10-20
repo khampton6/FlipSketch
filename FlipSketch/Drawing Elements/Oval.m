@@ -5,6 +5,8 @@
 //  Created by Brandon Headrick on 10/6/12.
 //  Copyright (c) 2012 Kevin Hampton. All rights reserved.
 //
+//  Model class for drawing rectangle elements
+//
 
 #import "Oval.h"
 
@@ -56,8 +58,11 @@
   height = shapeHeight;
 }
 
+//this function is never called.
 -(void) draw:(CGContextRef) context {
   
+    NSLog(@"is this ever called?");
+    
   int drawX = x;
   int drawY = y;
   int drawWidth = width;
@@ -72,7 +77,6 @@
     drawY = y - height;
     drawHeight = -1*height;
   }
-  
   
   CGContextSetLineWidth(context, strokeWidth);
   

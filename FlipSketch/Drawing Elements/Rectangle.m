@@ -5,14 +5,16 @@
 //  Created by Brandon Headrick on 10/6/12.
 //  Copyright (c) 2012 Kevin Hampton. All rights reserved.
 //
+//  Model class for drawing rectangle elements
+//
 
 #import "Rectangle.h"
-#import "ShapePoint.h"
 
 @implementation Rectangle
 
 @synthesize width, height, x, y, strokeWidth, isFilled, color;
 
+//why does this initializer care about width & height?  Wouldn't that be done during the drawing, or are you assuming some copy functionality?
 -(id) initWithX:(int) xPos withY:(int)yPos withWidth:(int) shapeWidth withHeight: (int) shapeHeight
       withColor:(UIColor *)shapeColor isFilled:(BOOL) filled {
   
@@ -45,6 +47,7 @@
   shapePoints = [NSMutableArray arrayWithObjects:leftPoint, rightPoint, topPoint, bottomPoint, nil];
 }
 
+//this flow is interesting; please discuss your logic for this with me later.
 - (void) updateShapePoints {
   [self createShapePoints];
 }

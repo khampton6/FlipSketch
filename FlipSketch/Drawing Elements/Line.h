@@ -10,4 +10,7 @@
 
 @interface Line : Shape
 
+
+- (id)initWithX:(int)x withY:(int)y withColor:(UIColor *)shapeColor;
+
 @end

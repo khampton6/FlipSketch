@@ -16,6 +16,7 @@
 
 @property (retain) Shape* owner;
 
+//this 
 -(id) initWithX: (int) xPos withY: (int) yPos withOwner:(Shape*) shapeOwner;
 -(void) draw:(CGContextRef) context;
 
