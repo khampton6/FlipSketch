@@ -7,13 +7,20 @@
 //
 
 #import "ShapeSelectViewController.h"
+#import "SketchViewController.h"
 #import "Utilities.h"
+#import "Rectangle.h"
+#import "Oval.h"
+#import "Line.h"
+#import "Brush.h"
 
 @interface ShapeSelectViewController ()
 
 @end
 
 @implementation ShapeSelectViewController
+
+@synthesize parentController;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -107,6 +114,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+  //find the current shape object that is selected
+  if([[[shapeDetails allKeys] objectAtIndex:[indexPath row]] isEqualToString:@"Rectangle"]){
+    
+    //sets the current shape selected for the SketchViewController
+    [parentController setCurrShape: [[Rectangle alloc] init]];
+    
+//    [parentController setCurrShape: [[shapeDetails allKeys] objectAtIndex:[indexPath row]]];
+  }
+  
+  
+  
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
@@ -116,5 +134,7 @@
      [detailViewController release];
      */
 }
+
+
 
 @end

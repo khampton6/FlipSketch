@@ -66,4 +66,9 @@
     //    }
 }
 
+- (NSString *)description
+{
+  return [NSString stringWithFormat:@"Brush"];
+}
+
 @end

@@ -45,4 +45,9 @@
   
 }
 
+- (NSString *)description
+{
+  return [NSString stringWithFormat:@"Generic Shape"];
+}
+
 @end

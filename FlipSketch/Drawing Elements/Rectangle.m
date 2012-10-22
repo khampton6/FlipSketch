@@ -96,4 +96,9 @@
   }
 }
 
+- (NSString *)description
+{
+  return [NSString stringWithFormat:@"Rectangle"];
+}
+
 @end

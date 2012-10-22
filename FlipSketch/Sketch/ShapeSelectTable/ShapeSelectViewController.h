@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Rectangle.h"
+#import "Oval.h"
+
+@class SketchViewController;
 
 @interface ShapeSelectViewController : UITableViewController {
   NSDictionary* shapeDetails;
+  
 }
+
+@property (nonatomic, assign) SketchViewController* parentController;
+
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "SketchViewController.h"
+#import "ShapeSelectViewController.h"
+#import "Shape.h"
 
 @interface SketchViewController ()
 
@@ -14,12 +16,14 @@
 
 @implementation SketchViewController
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
+    
     return self;
 }
 
@@ -31,7 +35,20 @@
 }
 
 - (void) touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event {
+//  [currShape ]
   
+  
+  // Retrieve the touch point
+  NSLog(@"dragBegan......");
+  UITouch *touch = [[event allTouches] anyObject];
+  CGPoint touchPoint = [touch locationInView:self.view];
+  NSLog(@"Touch x : %f y : %f", touchPoint.x, touchPoint.y);
+  
+  //[currShape initWithX:touchPoint.x withY:touchPoint.y withColor:[UIColor blackColor] isFilled: NO];
+  [currShape setX: touchPoint.x];
+  [currShape setY: touchPoint.y];
+  [currShape setColor:[UIColor blackColor]];
+  [currShape setIsFilled:YES];
 }
 
 - (void) touchesMoved:(NSSet*)touches withEvent:(UIEvent*)event {
@@ -46,6 +63,16 @@
   
 }
 
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  
+  UIViewController* destination = [segue destinationViewController];
+  if([destination isKindOfClass: [ShapeSelectViewController class]]) {
+    
+    ShapeSelectViewController* ssvc = (ShapeSelectViewController*)destination;
+    [ssvc setParentController:self];
+  }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -55,5 +82,12 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
   return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
+
+-(void)setCurrShape: (Shape*) aShape{
+  currShape = aShape;
+  NSLog(@"%@", currShape);
+}
+
+
 
 @end

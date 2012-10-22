@@ -97,4 +97,9 @@
   }
 }
 
+- (NSString *)description
+{
+  return [NSString stringWithFormat:@"Oval"];
+}
+
 @end

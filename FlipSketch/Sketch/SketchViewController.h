@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Shape.h"
 
-@interface SketchViewController : UIViewController
+@interface SketchViewController : UIViewController {
+  Shape* currShape;
+}
+
+-(void)setCurrShape: (Shape*) aShape;
 
 @end
